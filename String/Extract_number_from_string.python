@@ -1,0 +1,11 @@
+a=input()
+rev=""
+for i in a:
+    if i.isdigit():
+        rev+=i
+    else:
+        continue
+if (len(rev)==0):
+    print(0)
+else:
+    print(int(rev))
