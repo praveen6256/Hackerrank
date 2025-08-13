@@ -1,0 +1,17 @@
+a=list(input())
+left=0
+right=len(a)-1
+
+while left<right:
+    if a[left].isalpha() and a[right].isalpha():
+       
+        a[left],a[right]=a[right],a[left]
+
+        left+=1
+        right-=1
+    
+    elif not a[left].isalpha():
+        left+=1
+    elif not a[right].isalpha():
+        right-=1
+print("".join(a))
