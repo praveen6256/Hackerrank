@@ -1,0 +1,5 @@
+a=int(input())
+st=input()
+le=len(st)
+a=a%le
+print(st[a:]+st[:a])
