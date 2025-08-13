@@ -1,0 +1,7 @@
+vow="aeiou"
+a=input()
+for i in a:
+    if i in vow:
+        print(" ",end="")
+    else:
+        print(i,end="")
