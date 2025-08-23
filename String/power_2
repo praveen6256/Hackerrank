@@ -1,0 +1,24 @@
+public class PowerOfTwo {
+
+   
+    static boolean isPowerOfTwo(int n) {
+        return n > 0 && (n & (n - 1)) == 0;
+    }
+    static void printFirstNPowers(int n) {
+        int power = 1;
+        for (int i = 0; i < n; i++) {
+            System.out.print(power + " ");
+            power *= 2;
+        }
+    }
+
+    public static void main(String[] args) {
+        int num = 16;   
+        int N = 10;    
+
+        System.out.println("Is " + num + " a power of 2? " + isPowerOfTwo(num));
+
+        System.out.println("\nFirst " + N + " powers of 2:");
+        printFirstNPowers(N);
+    }
+}
